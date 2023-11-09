@@ -1,0 +1,71 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("survey-form");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      window.location.href = "/play.html"; // Redirect to the "play.html" page
+    });
+  });
+</script>
+<header>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <h1 id="title">&#9760; Welcome MY Friend &#9760; </h1>
+</header>
+
+  <body>
+ 
+<p id="description">
+  🔞warning☢ :do not play this game at night!!🔞 
+</p>
+
+<form id="survey-form">
+  <div class="inpute-headings">
+  <label for="name" id="name-label">Name: </label>
+  <input id="name" type="name" name="name" placeholder="name" class="form-inputs" required>
+  <br>
+  <br>
+  <label for="email" id="email-label">Email: </label>
+  <input id="email" type="email" name="email" placeholder="example@gmail.com" class="form-inputs" required>
+  <br>
+  <br>
+  <label for="number" id="number-label">Age: </label>
+  <input id="number" type="number" name="number" placeholder="ex:19" class="form-inputs" required min="19" max="100">
+  <br>
+  <br>
+
+  <!-- <label for="dropdown" id="choose">are you ? </label>
+  <select id="dropdown">
+    
+    <option value="player">player</option>
+  </select><-->
+  <br>
+  <br>
+  <br>
+  <label for="yes-no" id="label-radio"> do you play it alone ? </label>
+  <br>
+  <label for="yes-no">yes</label>
+  <input id="yes-no" type="radio" id="yes" name="yes-no" value="yes">
+  <label for="yes-no">no</label>
+  <input id="yes-no" type="radio" id="no" name="yes-no" value="no">
+  <br>
+  <br>
+  <br>
+    <div id="checkbox">
+  <label for="agreement"><input type="checkbox" id="agreement" value="checkbox" requirde>I agree with terms and conditions
+    </label>
+    <br>
+  <label for="agreement"><input type="checkbox" id="agreement" value="checkbox" required >I'm +18</label>
+    </div>
+  
+  <br>
+  <input class="submit-button" id="submit" type="submit" value="Click Here To Submit">
+    </div>
+</form>
+  </body>
+</html>
